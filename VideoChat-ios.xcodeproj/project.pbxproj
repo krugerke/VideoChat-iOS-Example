@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910CF73C18772C6200E9E51A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9125BCFB187723B3005A142B /* Images.xcassets */; };
 		9125BC991877232B005A142B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9125BC981877232B005A142B /* Foundation.framework */; };
 		9125BC9B1877232B005A142B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9125BC9A1877232B005A142B /* CoreGraphics.framework */; };
 		9125BC9D1877232B005A142B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9125BC9C1877232B005A142B /* UIKit.framework */; };
 		9125BC9F1877232B005A142B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9125BC9E1877232B005A142B /* CoreData.framework */; };
 		9125BCA51877232B005A142B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9125BCA31877232B005A142B /* InfoPlist.strings */; };
 		9125BCAB1877232B005A142B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9125BCAA1877232B005A142B /* AppDelegate.m */; };
-		9125BCB01877232B005A142B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9125BCAF1877232B005A142B /* Images.xcassets */; };
 		9125BCB71877232B005A142B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9125BCB61877232B005A142B /* XCTest.framework */; };
 		9125BCB81877232B005A142B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9125BC981877232B005A142B /* Foundation.framework */; };
 		9125BCB91877232B005A142B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9125BC9C1877232B005A142B /* UIKit.framework */; };
@@ -97,7 +97,6 @@
 		9125BCA81877232B005A142B /* VideoChat-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoChat-ios-Prefix.pch"; sourceTree = "<group>"; };
 		9125BCA91877232B005A142B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9125BCAA1877232B005A142B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9125BCAF1877232B005A142B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9125BCB51877232B005A142B /* VideoChat-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VideoChat-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9125BCB61877232B005A142B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9125BCBF1877232B005A142B /* VideoChat-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoChat-iosTests-Info.plist"; sourceTree = "<group>"; };
@@ -351,7 +350,6 @@
 				9125BD07187723B3005A142B /* ViewController.m */,
 				9125BCA91877232B005A142B /* AppDelegate.h */,
 				9125BCAA1877232B005A142B /* AppDelegate.m */,
-				9125BCAF1877232B005A142B /* Images.xcassets */,
 				9125BCA11877232B005A142B /* Supporting Files */,
 			);
 			path = "VideoChat-ios";
@@ -655,6 +653,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910CF73C18772C6200E9E51A /* Images.xcassets in Resources */,
 				9125BCE118772361005A142B /* back.png in Resources */,
 				9125BCE018772361005A142B /* Alix.ttf in Resources */,
 				9125BCF118772361005A142B /* search_bg.png in Resources */,
@@ -675,7 +674,6 @@
 				9125BCEB18772361005A142B /* grid_middle.png in Resources */,
 				9125BCF018772361005A142B /* label_your_name.png in Resources */,
 				9125BCE318772361005A142B /* background_bare.png in Resources */,
-				9125BCB01877232B005A142B /* Images.xcassets in Resources */,
 				9125BD0B187723B3005A142B /* Default@2x.png in Resources */,
 				9125BCE518772361005A142B /* background_w_chat.png in Resources */,
 				9125BCE218772361005A142B /* backendless_logo.png in Resources */,
