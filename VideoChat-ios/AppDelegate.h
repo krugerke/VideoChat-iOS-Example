@@ -1,22 +1,28 @@
 //
 //  AppDelegate.h
-//  VideoChat-ios
+//  VideoChat
 //
-//  Created by Yury Yaschenko on 1/3/14.
-//  Copyright (c) 2014 Home. All rights reserved.
+//  Created by Yury Yaschenko on 3/26/13.
+//  Copyright (c) 2013 BACKENDLESS.COM. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "Backendless.h"
+
+
+#define CONTROL_STREAM_MESSAGING @"ControlStreamMessaging"
+#define ACTION_KEY @"action"
+#define STATUS_KEY @"status"
+
+@class UsersListViewController, ViewController, ChatUserInfo;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+@property (nonatomic, strong) NSString *userName;
 @property (strong, nonatomic) UIWindow *window;
+@property (weak, nonatomic) UsersListViewController *usersListVC;
+@property (weak, nonatomic) ViewController *chatVC;
 
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
-
+- (void)setChainResponder:(id)chainResponder;
+- (NSArray *)getUsersList;
+- (ChatUserInfo *)isInList:(NSString *)userName;
 @end
