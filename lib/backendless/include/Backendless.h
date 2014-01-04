@@ -97,6 +97,11 @@
 #define BACKENDLESS_VERSION_NUM @"VersionNum"
 #define BACKENDLESS_DEBLOG_ON @"DebLogOn"
 
+@protocol ReachabilityDelegate <NSObject>
+-(void)changeNetworkStatus:(NSInteger)status connectionRequired:(BOOL)connectionRequired;
+
+@end
+
 @interface Backendless : NSObject
 //
 @property (strong, nonatomic, getter = getHostUrl, setter = setHostUrl:) NSString *hostURL;
@@ -114,6 +119,8 @@
 @property (strong, nonatomic, readonly) MessagingService *messagingService;
 @property (strong, nonatomic, readonly) FileService *fileService;
 @property (strong, nonatomic, readonly) MediaService *mediaService;
+
+@property (strong, nonatomic) id<ReachabilityDelegate> reachabilityDelegate;
 
 // Singleton accessor:  this is how you should ALWAYS get a reference to the class instance.  Never init your own.
 +(Backendless *)sharedInstance;
@@ -145,4 +152,11 @@
 -(void)setCachePolicy:(BackendlessCachePolicy *)policy;
 -(void)setCacheStoredType:(BackendlessCacheStoredEnum)storedType;
 -(void)saveCache;
+
+#pragma mark - connection
+-(NSInteger)getConnectionStatus;
+
+#pragma mark - offline mode
+-(void)setOfflineMode:(BOOL)offlineMode;
+
 @end
