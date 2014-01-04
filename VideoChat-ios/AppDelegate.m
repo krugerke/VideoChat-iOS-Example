@@ -13,11 +13,8 @@
 
 // *** YOU SHOULD SET THE FOLLOWING VALUES FROM YOUR BACKENDLESS APPLICATION ***
 // *** COPY/PASTE APP ID and SECRET KET FROM BACKENDLESS CONSOLE (use the Manage > App Settings screen) ***
-// me
-static NSString *APP_ID = @"B5A98E56-E301-EE2F-FFDB-0B422FBBF800";
-static NSString *SECRET_KEY = @"666FEFFD-4120-4B75-FFBF-B8E96C84C600";
-//static NSString *APP_ID = @"";
-//static NSString *SECRET_KEY = @"";
+static NSString *APP_ID = @"";
+static NSString *SECRET_KEY = @"";
 static NSString *VERSION_NUM = @"v1";
 
 
@@ -157,7 +154,7 @@ static NSString *VERSION_NUM = @"v1";
     
     [backendless initApp:APP_ID secret:SECRET_KEY version:VERSION_NUM];
     
-    //echoCancellationOn;
+    echoCancellationOn;
     
     self.usersListVC = nil;
     self.chatVC = nil;
